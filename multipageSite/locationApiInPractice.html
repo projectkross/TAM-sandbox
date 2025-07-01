@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>EEEEEEEEEEEE</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="../singlePageApp/assets/img/favicon.png" rel="icon">
+    <link href="../singlePageApp/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="../singlePageApp/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../singlePageApp/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../singlePageApp/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../singlePageApp/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../singlePageApp/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../singlePageApp/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="../singlePageApp/assets/css/style.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Vendor JS Files -->
+    <script src="../singlePageApp/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../singlePageApp/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../singlePageApp/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../singlePageApp/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../singlePageApp/assets/vendor/php-email-form/validate.js"></script>
+    <!-- Template Main JS File -->
+    <script src="../singlePageApp/assets/js/main.js"></script>
+
+    <!-- =============================================================================================
+    *** Don't worry about anything above this line! ***
+    ============================================================================================= -->
+
+    <script>
+        (function (apiKey) {
+            (function (p, e, n, d, o) {
+                var v, w, x, y, z; o = p[d] = p[d] || {}; o._q = o._q || [];
+                v = ['initialize', 'identify', 'updateOptions', 'pageLoad', 'track']; for (w = 0, x = v.length; w < x; ++w)(function (m) {
+                    o[m] = o[m] || function () { o._q[m === v[0] ? 'unshift' : 'push']([m].concat([].slice.call(arguments, 0))); };
+                })(v[w]);
+                y = e.createElement(n); y.async = !0; y.src = 'https://cdn.pendo.io/agent/static/' + apiKey + '/pendo.js';
+                z = e.getElementsByTagName(n)[0]; z.parentNode.insertBefore(y, z);
+            })(window, document, 'script', 'pendo');
+
+            pendo.initialize({
+                visitor: {
+                    id: localStorage.getItem('visitor')
+                },
+                account: {
+                    id: localStorage.getItem('account')
+                }
+            });
+        })('1a320afd-6992-47f3-4486-571abccd1b9c');
+    </script>
+
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center justify-content-between">
+            <h1 class="logo"><img src="../singlePageApp/assets/img/dumpster-fire.gif" alt="" class="img-fluid"></a> <a
+                    href="index.html">Escalation Engineering</a>
+                <a href="index.html" class="logo"><img src="../singlePageApp/assets/img/dumpster-fire.gif" alt="" class="img-fluid"></a>
+            </h1>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="locationAPI.html">Return to Location API</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+        </div>
+    </header>
+
+    <!-- ======= "home" section with description.  nothing fancy here. ======= -->
+    <section id="home" class="anchor" style="background: url('img/spacecat.svg') top center; background-size: cover;">
+        <div class="home-container">
+            <h3><strong>Location API in Practice!</strong></h3>
+            <h2></h2>
+            <p style="color:white;">This page allows you to see the behavior you might find on a single-page site with
+                URL fragments.<br>
+                Each section below is coded to append <code>#pageX</code> to the URL once it is fully within the
+                viewport. </p>
+            <a href="#pageOne" class="btn-get-started scrollto">Get Started</a>
+        </div>
+    </section>
+    <main id="main">
+        <section id="pageOne" class="locationApiPages anchor">
+            <div class="locationApiPages-container">
+                <h3>This is page one</h3>
+                <button type="button" class="btn-get-started" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    onclick="modalText()">Check URLs</button>>
+            </div>
+        </section>
+        <section id="pageTwo" class="locationApiPages anchor">
+            <div class="locationApiPages-container">
+                <h3>This is page two</h3>
+                <button type="button" class="btn-get-started" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    onclick="modalText()">Check URLs</button>
+            </div>
+        </section>
+        <section id="pageThree" class="locationApiPages anchor">
+            <div class="locationApiPages-container">
+                <h3>This is page three</h3>
+                <button type="button" class="btn-get-started" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    onclick="modalText()">Check URLs</button>
+            </div>
+        </section>
+        <section id="pageFour" class="locationApiPages anchor">
+            <div class="locationApiPages-container">
+                <h3>This is page four</h3>
+                <button type="button" class="btn-get-started" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    onclick="modalText()">Check URLs</button>
+            </div>
+        </section>
+        <section id="pageFive" class="locationApiPages anchor">
+            <div class="locationApiPages-container">
+                <h3>This is page five</h3>
+                <button type="button" class="btn-get-started" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    onclick="modalText()">Check URLs</button>
+            </div>
+        </section>
+        <section id="pageSix" class="locationApiPages anchor">
+            <div class="locationApiPages-container">
+                <h3>This is page six</h3>
+                <button type="button" class="btn-get-started" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    onclick="modalText()">Check URLs</button>
+            </div>
+        </section>
+
+        <!-- This is the modal that will pop up when you check URLs -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" style="margin-top: 35%;">
+                <div class="modal-content" style="width:fit-content;">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Current URLs</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="browserURL"></p>
+                        <p id="pendoURL"></p>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                function modalText() {
+                    $('#browserURL').contents().remove();
+                    $('#pendoURL').contents().remove();
+                    var browserURL = window.location.href;
+                    var pendoURL = pendo.getNormalizedUrl();
+                    $('#browserURL').append('Browser URL:\n<code>' + browserURL);
+                    $('#pendoURL').append('URL sent to Pendo:\n<code>' + pendoURL)
+                }
+            </script>
+        </div>
+    </main>
+
+<!-- =============================================================================================
+    *** This is the script that determines the changing hash in the URL ***
+    ============================================================================================= -->
+    <script>
+        // Source: http://stackoverflow.com/questions/30734552/change-url-while-scrolling
+        // stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+        // check to see if the element/section you want is in the viewport
+        function isElementInViewport(el) {
+            if (typeof jQuery === "function" && el instanceof jQuery) {
+                el = el[0];
+            }
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+        // listen for the scroll event
+        $(document).on("scroll", function () {
+            // check if the anchor elements are visible
+            $(".anchor").each(function (idx, el) {
+                if (isElementInViewport(el)) {
+                    // update the URL hash
+                    if (window.history.pushState) {
+                        var urlHash = "#" + $(el).attr("id");
+                        // if you scroll to the top, just use the normal URL path
+                        if ($(window).scrollTop() == 0) {
+                            window.history.pushState(null, null, window.location.pathname);
+                        } else {
+                            //if you're not at the top, change the URL
+                            window.history.pushState(null, null, urlHash);
+                            // if we don't want that sent to pendo, we could add
+                            // a location api line to keep the URL the base path
+                            pendo.location.addTransforms([
+                                {
+                                    'attr': 'hash',
+                                    'action': 'Clear'
+                                }
+                            ]);
+                        }
+                    };
+
+                };
+            });
+        });
+    </script>
+</body>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+</body>
+
+</html>

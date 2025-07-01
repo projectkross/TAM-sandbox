@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>EEEEEEEEEEEE</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="singlePageApp/assets/img/favicon.png" rel="icon">
+    <link href="singlePageApp/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="singlePageApp/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="singlePageApp/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="singlePageApp/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="singlePageApp/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="singlePageApp/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="singlePageApp/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="singlePageApp/assets/css/style.css" rel="stylesheet">
+
+    <style>
+        #getData {
+            height: 150px;
+            width: 150px;
+            padding: 10px;
+            border: 1px solid #e43c5c;
+            border-radius: 10px;
+        }
+    </style>
+
+    <!-- =======================================================
+         *** Don't worry about anything above this line! ***
+         ======================================================== -->
+
+    <script>
+        (function (apiKey) {
+            (function (p, e, n, d, o) {
+                var v, w, x, y, z; o = p[d] = p[d] || {}; o._q = o._q || [];
+                v = ['initialize', 'identify', 'updateOptions', 'pageLoad', 'track']; for (w = 0, x = v.length; w < x; ++w)(function (m) {
+                    o[m] = o[m] || function () { o._q[m === v[0] ? 'unshift' : 'push']([m].concat([].slice.call(arguments, 0))); };
+                })(v[w]);
+                y = e.createElement(n); y.async = !0; y.src = 'https://cdn.pendo.io/agent/static/' + apiKey + '/pendo.js';
+                z = e.getElementsByTagName(n)[0]; z.parentNode.insertBefore(y, z);
+            })(window, document, 'script', 'pendo');
+            pendo.initialize({
+                disableCookies:true
+            });
+        })('167e41e0-0f3d-466f-4800-0ea4175ea6ba');
+    </script>
+
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <div id="topBit">
+        <div class="container align-items-center" style="text-align: center;">
+            <h1 class="logo">
+                <img src="singlePageApp/assets/img/dumpster-fire.gif" alt="" class="img-fluid">
+                <a href="">Let's Break Shit with EE</a>
+                <img src="singlePageApp/assets/img/dumpster-fire.gif" alt="" class="img-fluid">
+            </h1>
+            <div>
+                <p>This is a portal to a series of sites created
+                    by Escalation Engineering as an alternative to Pizza CRM.<br><br>These sites
+                    have been created with the needs of TS in mind, such as troubleshooting
+                    common issues, ease of customization, and pages devoted to specific Pendo
+                    features.
+                </p>
+                <h3>Choose your adventure below!</h3>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Header -->
+    <!-- ======= home Section ======= -->
+    <section id="home" style='background: url("singlePageApp/assets/img/grimace.jpg") top center; background-size: cover;'>
+        <div class="home-container">
+            <div class="row homePage">
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-file"></i></div>
+                        <h4 class="title"><a href="">Single Page App</a></h4>
+                        <p class="description ">A tagging wonderland full of css, dynamic IDs, and more!</p><br>
+                        <a href="singlePageApp/index.html"><button type="button" class="btnLaunch">
+                            Go to there!
+                        </button></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-file"></i></div>
+                        <h4 class="title"><a href="">Multipage App</a></h4>
+                        <p class="description ">A site with pages for everything from (Location)API to CSP.</p><br>
+                        <a href="multipageSite/index.html"><button type="button" class="btnLaunch">
+                            Go to there!
+                        </button></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-tachometer"></i></div>
+                        <h4 class="title"><a href="">Self-hosted</a></h4>
+                        <p class="description ">Learn how to identify and troubleshoot self-hosted installs.</p><br>
+                        <a href="multipageSite/selfHosted.html"><button type="button" class="btnLaunch">
+                            Go to there!
+                        </button></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-world"></i></div>
+                        <h4 class="title"><a href="">JWT Install</a></h4>
+                        <p class="description ">Learn the ins and outs of JSON Web Token (JWT) installs.</p><br>
+                        <a href="multipageSite/jwt.html"><button type="button" class="btnLaunch">
+                            Go to there!
+                        </button></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- End home -->
+</body>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+<!-- Vendor JS Files -->
+<script src="singlePageApp/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="singlePageApp/assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="singlePageApp/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="singlePageApp/assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="singlePageApp/assets/vendor/php-email-form/validate.js"></script>
+<!-- Template Main JS File -->
+<script src="singlePageApp/assets/js/main.js"></script>
+</body>
+
+</html>
