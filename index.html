@@ -49,15 +49,15 @@
                 z = e.getElementsByTagName(n)[0]; z.parentNode.insertBefore(y, z);
             })(window, document, 'script', 'pendo');
             pendo.initialize({
-                //visitor: {
-                //id:             
+                visitor: {
+                id:  'sandbox-visitor-id1'           
                 //userPermission:         'Pendo Employee',
                 //historical:       'PromotedField'
                 // full_name:      'John Acme',
                 // tags:           [{"Persona":'Product Manager'}],
-            //},
-            //account: {
-                //id:             'sandbox-account-id',
+            },
+            account: {
+                id:             'sandbox-account-id',
                 // account_name:    'Cool New Account',
                 // monthly_value:   20000,
                 // is_paying:       true,
@@ -65,10 +65,10 @@
 //<--Set Location API-->
             // location: {
             //     transforms: [annotateAddTransform]
-            //   }
+               }
 //<--Set Cookie Config API-->
             //  disablePersistence: true, 
-              disableCookies: true, 
+            //  disableCookies: true, 
             //  analytics: {
             //     excludeEvents: ['identify', 'meta', 'load', 'click', 'focus', 'submit', 'change', 'track']
             // }
